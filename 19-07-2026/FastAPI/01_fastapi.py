@@ -1,7 +1,7 @@
 # Python version required : 3.10 or newer
 # pip install fastapi uvicorn
 # python 01_fastapi.py
-# uvicorn 01_fastapi:app --port 8000
+# uvicorn 01_fastapi:app --reload --port 8000
 
 from fastapi import FastAPI 
 
