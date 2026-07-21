@@ -17,6 +17,10 @@ def read_root():
 def say_hello_python():
     return {"message": "Hello from us"}
 
+@app.get("/say_hello/{name}")
+def say_hello_python(name: str):
+    return {"message": f"Hello {name}"}
+
 if __name__ == "__main__":
 
     import uvicorn
