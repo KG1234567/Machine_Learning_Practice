@@ -1,5 +1,7 @@
 # Python version required : 3.10 or newer
 # pip install fastapi uvicorn
+# python 01_fastapi.py
+# uvicorn 01_fastapi:app --port 8000
 
 from fastapi import FastAPI 
 
@@ -10,6 +12,10 @@ app = FastAPI()    # app is central object of a fastapi
 @app.get("/")
 def read_root():
     return {"message": "Hello!"}
+
+@app.get("/say_hello")
+def say_hello_python():
+    return {"message": "Hello from us"}
 
 if __name__ == "__main__":
 
